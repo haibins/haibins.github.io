@@ -1,0 +1,20 @@
+{
+  "name": "vuepress-frey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue-template-compiler": "^2.7.14",
+    "vuepress": "^1.9.8"
+  },
+  "devDependencies": {
+    "vuepress-theme-reco": "^1.6.16"
+  }
+}
