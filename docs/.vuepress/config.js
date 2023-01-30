@@ -60,7 +60,7 @@ module.exports = {
         children: [{ title: "学前必读", path: "/" }],
       },
       {
-        title: "基础学习",
+        title: "React",
         path: "/handbook/ConditionalTypes",
         collapsable: false, // 不折叠
         children: [
