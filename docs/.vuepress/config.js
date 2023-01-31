@@ -66,7 +66,7 @@ module.exports = {
         children: [
           { title: "条件类型", path: "/handbook/ConditionalTypes" },
           { title: "泛型", path: "/handbook/Generics" },
-          { title: "阿斯顿撒", path: "/handbook/Redux" },
+          { title: "flux和redux", path: "/handbook/Redux" },
         ],
       },
     ],
