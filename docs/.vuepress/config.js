@@ -69,6 +69,14 @@ module.exports = {
           { title: "flux和redux", path: "/handbook/Redux" },
         ],
       },
+      {
+        title: "Css",
+        path: "/css/width",
+        collapsable: false, // 不折叠
+        children: [
+          { title: "正确使用width", path: "/css/width" },
+        ],
+      }
     ],
   },
 };
