@@ -1,5 +1,5 @@
 module.exports = {
-  port:'7748',
+  port: "8080",
   title: "Frey",
   description: "frey的个人博客",
   theme: "reco",
@@ -70,13 +70,34 @@ module.exports = {
         ],
       },
       {
+        title: "Vite",
+        path: "/vite/unplugin-vue-components",
+        collapsable: false, // 不折叠
+        children: [
+          {
+            title: "unplugin-vue-components",
+            path: "/vite/unplugin-vue-components",
+          },
+        ],
+      },
+      {
         title: "Css",
         path: "/css/width",
         collapsable: false, // 不折叠
+        children: [{ title: "正确使用width", path: "/css/width" }],
+      },
+      {
+        title: "Git",
+        path: "/git/add-remote",
+        collapsable: false, // 不折叠
         children: [
-          { title: "正确使用width", path: "/css/width" },
+          {
+            title: "git 将本地项目关联到远程仓库",
+            path: "/git/add-remote",
+          },
         ],
-      }
+      },
     ],
   },
+  plugins: [["vuepress-plugin-code-copy", true]],
 };
