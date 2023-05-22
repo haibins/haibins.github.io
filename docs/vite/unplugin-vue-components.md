@@ -1,7 +1,8 @@
 ---
 title: Vite按需引入自定义组件unplugin-vue-components
-author: 冴羽
 date: '2022-12-12'
+tags:
+  - vite
 ---
 
 > `unplugin-vue-components`插件可以在Vue文件中自动引入组件（包括项目自身的组件和各种组件库中的组件）；作者是Vite生态圈大名鼎鼎的[Anthony Fu](https://github.com/antfu)

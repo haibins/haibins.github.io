@@ -1,3 +1,5 @@
+const ReadFile = require("./readFile.js");
+
 module.exports = {
   port: "8080",
   title: "Frey",
@@ -5,7 +7,7 @@ module.exports = {
   theme: "reco",
   head: [
     // 网页标签栏图标
-    ["link", { rel: "icon", href: "favicon.png" }],
+    ["link", { rel: "icon", href: "favicon.ico" }],
     // 移动栏优化
     [
       "meta",
@@ -52,52 +54,7 @@ module.exports = {
         ],
       },
     ],
-    sidebar: [
-      {
-        title: "欢迎学习",
-        path: "/",
-        collapsable: false, // 不折叠
-        children: [{ title: "学前必读", path: "/" }],
-      },
-      {
-        title: "React",
-        path: "/handbook/ConditionalTypes",
-        collapsable: false, // 不折叠
-        children: [
-          { title: "条件类型", path: "/handbook/ConditionalTypes" },
-          { title: "泛型", path: "/handbook/Generics" },
-          { title: "flux和redux", path: "/handbook/Redux" },
-        ],
-      },
-      {
-        title: "Vite",
-        path: "/vite/unplugin-vue-components",
-        collapsable: false, // 不折叠
-        children: [
-          {
-            title: "unplugin-vue-components",
-            path: "/vite/unplugin-vue-components",
-          },
-        ],
-      },
-      {
-        title: "Css",
-        path: "/css/width",
-        collapsable: false, // 不折叠
-        children: [{ title: "正确使用width", path: "/css/width" }],
-      },
-      {
-        title: "Git",
-        path: "/git/add-remote",
-        collapsable: false, // 不折叠
-        children: [
-          {
-            title: "git 将本地项目关联到远程仓库",
-            path: "/git/add-remote",
-          },
-        ],
-      },
-    ],
+    sidebar: ReadFile(),
   },
   plugins: [["vuepress-plugin-code-copy", true]],
 };

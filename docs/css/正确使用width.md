@@ -81,11 +81,8 @@
 ![image](https://cdn.staticaly.com/gh/haibins/image-host@master/20230208/image.2ahzi6xs48sg.webp)
 这时仅仅会影响父元素的宽度，而子元素的宽度依然获取的是父元素的content区域
 
-
-
 ### 总结
-> 1、当设置"box-sizing:content-box"时，子元素设置宽度的百分比是指子元素内容区域相对于父元素内容区域；  
-> 2、当设置"box-sizing:border-box"时，子元素设置宽度的百分比是指子元素整个盒子区域相对于父元素内容区域；  
-> 3、如果想要正确使用"width:100%"这一属性，一定要设置"box-sizing:border-box",否则会造成子元素溢出。
 
-
+1. 当设置"box-sizing:content-box"时，子元素设置宽度的百分比是指子元素内容区域相对于父元素内容区域；  
+2. 当设置"box-sizing:border-box"时，子元素设置宽度的百分比是指子元素整个盒子区域相对于父元素内容区域；  
+3. 如果想要正确使用"width:100%"这一属性，一定要设置"box-sizing:border-box",否则会造成子元素溢出。
