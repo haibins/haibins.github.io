@@ -31,7 +31,7 @@ jobs: # 工作流
 
         run: |
           npm install pnpm -g
-          pnpm i --no-frozen-lockfile
+          pnpm install --ci
           pnpm run build
 
       - name: Deploy
